@@ -1,0 +1,524 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 10px;
+    background-color: rgb(194, 194, 190);
+}
+.back_image{
+    background-image: url('room_1.png');
+    height: 550px;
+    width: 1200px;
+    background-size: cover; 
+    position: relative;
+    margin-left: 30px;
+}
+
+#sound_pause_btn{
+    position: absolute;
+   margin-left: 1100px; 
+   cursor: pointer;
+}
+#sound_play_btn{
+    position: absolute;
+   margin-left: 1000px; 
+   cursor: pointer;
+}
+
+#sound_pause_btn:active{
+    background-color: burlywood;
+}
+
+/* **************** STORE BOX ****************/
+
+.store_box{
+    height: 50px;
+    width: 390px;
+    background-color: rgb(179, 108, 15);
+    position: absolute;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,50px);
+    gap: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.store_box_sub{
+    
+    margin-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: beige;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#token_1{
+    position: absolute;
+    width: 30px;
+      height: 30px;
+       border-radius: 50%;
+       margin-top: 7px;
+       margin-left: 4px;
+      background:radial-gradient(rgb(122, 120, 231),blue);
+      opacity: 0;
+}
+#token_2{
+    position: absolute;
+    width: 30px;
+      height: 30px;
+       border-radius: 50%;
+       margin-top: 7px;
+       margin-left: 4px;
+      background:radial-gradient(rgb(122, 120, 231),blue);
+      opacity: 0;
+}
+#token_3{
+    position: absolute;
+    width: 30px;
+      height: 30px;
+       border-radius: 50%;
+       margin-top: 7px;
+       margin-left: 4px;
+      background:radial-gradient(rgb(122, 120, 231),blue);
+      opacity: 0;
+}
+#token_4{
+    position: absolute;
+    width: 30px;
+      height: 30px;
+       border-radius: 50%;
+       margin-top: 7px;
+       margin-left: 4px;
+      background:radial-gradient(rgb(122, 120, 231),blue);
+      opacity: 0;
+}
+#token_5{
+    position: absolute;
+    width: 30px;
+      height: 30px;
+       border-radius: 50%;
+       margin-top: 7px;
+       margin-left: 4px;
+      background:radial-gradient(rgb(122, 120, 231),blue);
+      opacity: 0;
+}
+
+
+#paper{
+    height: 20px;
+    width: 30px;
+    background-color: rgb(233, 195, 27);
+    position: absolute;
+    cursor: pointer;
+border-radius: 2px;
+margin-top: 10px;
+margin-left: 4px;
+opacity : 0;
+}
+
+/* **************** DOOR LOCK ****************/
+
+.door_lock{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(136, 63, 63);
+    position: absolute;
+    margin-top: 280px;
+    margin-left:250px;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(5,20px);
+    cursor: pointer;
+}
+
+.door_lock_circle{
+    height: 15px;
+    width: 15px;   
+    border-radius: 50%;
+    background-color: grey;
+    margin-top: 7px;
+    margin-left: 2px;
+  
+}
+
+/* **************** HINT 1 ****************/
+
+
+#hint_1_cover{
+    height: 67px;
+    width: 40px;
+    cursor: pointer;
+    background-color: beige;
+    margin-top: 214px;
+   margin-left: 504px;
+   position: absolute;
+   opacity: 1;
+}
+.hint_1{
+    height: 69px;
+    width: 40px;
+    background-color: rgb(217, 224, 201);
+    border-radius: 5px;
+    display: grid;
+   margin-top: 213px;
+   margin-left: 504px;
+   position: absolute;
+   cursor: pointer;
+}
+.hint_1_circle{
+    height: 15px;
+    width: 15px;   
+    margin-top: 5px;
+    margin-left: 12px;
+    border-radius: 50%;
+    
+}
+.hint_1_circle:nth-child(1){
+   background-color: red; 
+}
+.hint_1_circle:nth-child(2){
+    background-color: yellow; 
+ }
+ .hint_1_circle:nth-child(3){
+    background-color: green; 
+ }
+
+
+/* **************** HINT 1 PUZZLE ****************/
+
+.hint_1_puz{
+    position: absolute;
+    height: 72px;
+    width: 72px;
+    background-color: rgb(14, 235, 32);
+    margin-top: 489px;
+    margin-left: 50px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.hint_1_puz_sub{
+    height: 36px;
+    width: 72px;
+    background-color: rgb(145, 94, 12);
+       display: grid;
+       grid-template-columns: 30% 30% 30%;
+       
+}
+
+.hint_1_puz_circle {
+    height: 15px;
+    width: 15px;   
+    margin-top:7px;
+    margin-left: 8px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.hint_1_btn{
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+     border: none;
+     cursor: pointer;
+}
+
+#submit_btn{
+   width: 20px;
+   height: 5px;
+    cursor: pointer;
+    
+}
+
+
+/* **************** DIAMOND SHAPE PUZZLE ****************/
+
+.diamond_shape{
+    position: absolute;
+    width: 30px;
+      height: 30px;
+       border-radius: 50%;
+      background:radial-gradient(rgb(122, 120, 231),blue);
+      
+}
+#diamond_1{
+    margin-top: 510px;
+    margin-left: 130px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+/* **************** HINT - 2 ****************/
+
+#hint_2{
+    height: 30px;
+    width: 40px;
+    background-color: black;
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 900px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#hint_2_paper{
+    height: 30px;
+    width: 40px;
+    background-color: rgb(252, 223, 96);
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 900px;
+    cursor: pointer;
+border-radius: 2px;
+opacity:0;
+}
+
+/* **************** HINT - 2 PAPER FIREPLACE****************/
+
+#paper_fireplace{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: black;
+    margin-top: 320px;
+    margin-left: 730px;
+    cursor: pointer;
+    opacity: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding-top: 13px;
+    padding-left: 5px;
+    
+}
+
+
+
+
+
+/* **************** HINT - 2 PUZZLE****************/
+
+.hint_2_puz{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(202, 225, 252);
+    border-radius: 5px;
+    margin-top: 440px;
+    margin-left: 423px;
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hint_2_input{
+  height: 25px;
+  margin-top: 12px;
+  margin-left: 5px;
+  padding-left: 2px;
+  cursor: pointer;
+}
+#hint_2_btn{
+    cursor: pointer;
+}
+
+#diamond_2{
+    margin-top: 50px;
+margin-left: 40px;
+opacity :0;
+cursor: pointer;
+}
+
+
+/* **************** HINT 3 ****************/
+
+#hint_3{
+    height: 30px;
+    width: 10px;
+    background-color: black;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 214px;
+   background: transparent;
+}
+
+#diamond_3{
+    margin-top: 420px;
+    margin-left: 230px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    
+}
+
+/* **************** HINT 4 ****************/
+
+#hint_4{
+    height: 30px;
+    width: 50px;
+    background-color: black;
+    position: absolute;
+    margin-left: 1130px;
+    cursor: pointer;
+    margin-top: 340px;
+    background: transparent;
+}
+
+#light_area{
+    height: 50px;
+    width: 50px;
+    background-color:rgb(234, 247, 120);
+    margin-left: 1130px;
+    transform: skewY(5deg);
+    box-shadow: 0px -10px 27px 10px rgb(234, 247, 120);
+    opacity: 0;
+    margin-top: 280px;
+    position: absolute;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+#mag_glass{
+    height: 10px;
+    width: 60px;
+    background-color: black;
+    position: absolute;
+    margin-top: 273px;
+margin-left: 817px;
+cursor: pointer;
+background: transparent;
+}
+
+#mag_glass_store_box{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(222, 228, 227);
+    border-radius: 50%;
+    border: 1px solid rgb(139, 134, 134);
+    margin-top: 3px;
+    margin-left: 10px;
+    position: relative;
+    opacity: 0;
+}
+#mag_glass_store_box::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 5px;
+    background-color: rgb(15, 140, 197);
+    top: 18px;
+    margin-left: 6.5px;
+    border-radius: 2px;
+}
+
+#mag_area{
+    height: 100px;
+    width: 50px;
+    background-color: black;
+    margin-left: 1030px;
+    margin-top: 280px;
+    cursor: pointer;
+    position: absolute;
+    background: transparent;
+}
+
+#mag_area_mag_glass{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(222, 228, 227);
+    border-radius: 50%;
+    border: 1px solid rgb(139, 134, 134);
+    margin-top: 3px;
+    margin-left: 10px;
+    position: relative;
+    opacity: 0;
+    transform: rotateY(130deg);
+   
+}
+#mag_area_mag_glass::before{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 5px;
+    background-color: rgb(15, 140, 197);
+    top: 38px;
+    margin-left: 17px;
+    border-radius: 2px;
+}
+
+
+/* **************** HINT 4 PUZZLE ****************/
+
+#hint_4_puzzle{
+    height: 50px;
+    width: 90px;
+    background-color: rgb(119, 119, 119);
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 550px;
+    border-radius: 5px;
+    box-shadow: 4px 6px 7px -1px grey;
+    display: grid;
+    grid-template-columns: repeat(4,20px);
+    gap: 2px;
+    border: 1px solid black;
+    
+}
+
+#diamond_4{
+
+    margin-top: 50px;
+    margin-left: 30px;
+    opacity: 0;
+    cursor: pointer;
+}
+#hint_4_btn{
+    cursor: pointer;
+}
+
+/* **************** HINT 5  ****************/
+
+#hint_5{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    position: absolute;
+    margin-top: 495px;
+    margin-left: 525px;
+    background: transparent;
+}
+
+#diamond_5{
+    margin-left:550px ;
+    cursor: pointer;
+    opacity: 0;
+    margin-top: 500px;
+}
+
+/* **************** DOOR LOCK OPEN ****************/
+
+#door_lock_open{
+    height: 50px;
+    width: 120px;
+    background-color: white;
+    position: absolute;
+    margin-top: 228px;
+    margin-left: 249px;
+    opacity: 0;
+    font-size: 25px;
+    color: black;
+    border-radius: 3px;
+}
+
+#door_lock_btn{
+   height: 5px;
+   width: 15px;
+   margin-top: 320px;
+   margin-left: 330px;
+   cursor: pointer;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape room</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <audio src="back_music.mp3" id = "back_music"></audio>
+    <div class="back_image">
+        <button id = "sound_pause_btn" >Music OFF</button>
+        <button id = "sound_play_btn" >Music ON</button>
+
+ <!--****************  STORE BOX  **********-->
+
+     <div class="store_box">
+         <div class="store_box_sub" id = store_box_sub_1>
+             <div id="token_1"></div>
+         </div>
+         <div class="store_box_sub" id = store_box_sub_2>
+              <div id="paper"></div>
+         </div>
+         <div class="store_box_sub" id = "store_box_sub_3">
+             <div id="token_2"></div>
+         </div>
+         <div class="store_box_sub" id = "store_box_sub_4">
+             <div id="token_3"></div>
+         </div>
+         <div class="store_box_sub" id = "store_box_sub_5">
+             <div id="mag_glass_store_box"></div>
+         </div>
+         <div class="store_box_sub" id = "store_box_sub_6">
+            <div id="token_4"></div>
+         </div>
+         <div class="store_box_sub" id  = "store_box_sub_7">
+            <div id="token_5"></div>
+         </div>
+     </div>
+
+
+    <!--****************  DOOR **********-->
+
+<div class="door_lock" id = door_lock>
+    <div class="door_lock_circle" id = door_lock_circle_1></div>
+    <div class="door_lock_circle" id = door_lock_circle_2></div>
+    <div class="door_lock_circle" id = door_lock_circle_3></div>
+    <div class="door_lock_circle" id = door_lock_circle_4></div>
+    <div class="door_lock_circle" id = door_lock_circle_5></div>
+</div>
+        <!--****************  HINT-1 **********-->
+
+
+
+    <div class="hint_1">
+        <div class="hint_1_circle"></div>
+        <div class="hint_1_circle"></div>
+        <div class="hint_1_circle"></div>
+    </div>
+    <div id="hint_1_cover"></div>
+    
+    <!--****************  HINT-1 PUZZLE  **********-->
+
+     <div class="hint_1_puz">
+         <div class="hint_1_puz_sub" id = "hint_1_puz_sub">
+             <div class="hint_1_puz_circle" id = "circle_1">
+                 <button class = "hint_1_btn" id="hint_1_btn_1"></button>
+             </div>
+             <div class="hint_1_puz_circle" id = "circle_2">
+                <button class = "hint_1_btn" id="hint_1_btn_2"></button>
+            </div>
+            <div class="hint_1_puz_circle" id = "circle_3">
+                <button class = "hint_1_btn" id="hint_1_btn_3"></button>
+            </div>
+         </div>
+         <button id = "submit_btn" img></button>
+         <audio src="/btn.mp3" id = "btn_music"></audio>
+     </div>
+
+
+       <!--****************  TOKEN SHAPES PUZZLE  **********-->
+
+<div>
+    <!--COLOUR BOX TOKEN-->
+    <div class="diamond_shape" id="diamond_1"></div>
+</div>
+
+<!--****************  HINT-2 PUZZLE  **********-->
+
+
+<div class="hint_2_puz">
+    <input class = "hint_2_input" type="text" maxlength="1" id = "hint_2_input_1">
+    <input class = "hint_2_input" typ="text" maxlength="1" id = "hint_2_input_2">
+    <input class = "hint_2_input" typee="text" maxlength="1" id = "hint_2_input_3">
+    <input class = "hint_2_input" type="text" maxlength="1" id = "hint_2_input_4">
+    <button id="hint_2_btn"></button>
+
+<!--NUMBER PUZZLE TOKEN-->
+<div class="diamond_shape" id="diamond_2"></div>
+</div>
+
+<div id="hint_2"></div>
+<div id="hint_2_paper"></div>
+<div id="paper_fireplace"></div>
+
+
+
+
+<!--****************  HINT- 3 **********-->
+
+
+<div id="hint_3"></div>
+<!-- TOKEN 3 PLANT-->
+<div class = "diamond_shape" id="diamond_3"></div>
+
+
+
+<!--****************  HINT- 4 **********-->
+<div id="mag_glass"></div>
+<div id="mag_area">
+    <div id="mag_area_mag_glass"></div>
+</div>
+<div id="light_area"></div>
+<div id="hint_4"></div>
+
+<!--****************  HINT- 4 PUZZLE **********-->
+
+<div id="hint_4_puzzle">
+    <input class = "hint_2_input" type="text" maxlength="1" id = "hint_4_input_1">
+    <input class = "hint_2_input" typ="text" maxlength="1" id = "hint_4_input_2">
+    <input class = "hint_2_input" typee="text" maxlength="1" id = "hint_4_input_3">
+    <input class = "hint_2_input" type="text" maxlength="1" id = "hint_4_input_4">
+    <button id="hint_4_btn"></button>
+    <div class="diamond_shape" id="diamond_4"></div>
+</div>
+
+
+<!--****************  HINT- 5  **********-->
+
+<div id="hint_5"></div>
+    <div class="diamond_shape" id="diamond_5"></div>
+
+
+
+<!--****************  DOOR LOCK OPEN  **********-->
+
+<div id="door_lock_open"></div>
+<button id="door_lock_btn"></button>
+
+
+
+
+
+
+
+    <!--BACK IMAGE DIV-->
+</div>
+<script src="script.js"></script>
+</body>
+</html>
